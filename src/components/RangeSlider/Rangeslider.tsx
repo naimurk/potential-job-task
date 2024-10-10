@@ -1,8 +1,14 @@
 "use client";
 import React, { useState } from "react";
 
-const RangeSlider = () => {
-  const [value, setValue] = useState(10); // Initial value for the slider
+const RangeSlider = ({
+  rangeValue,
+  name,
+}: {
+  rangeValue: number;
+  name: string;
+}) => {
+  const [value, setValue] = useState(rangeValue || 50); // Initial value for the slider
 
   // Function to handle mouse movements
   // const handleMouseMove = (e) => {
@@ -13,20 +19,21 @@ const RangeSlider = () => {
   // };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="poppins">
       {/* Slider container */}
-      <div className="relative w-96 h-2 bg-gray-300 rounded-full cursor-pointer">
+      <h1 className="text-black text-[24px] font-semibold">{name}</h1>
+      <div className="relative w-full h-3 bg-[#EDECEC] rounded-full cursor-pointer mt-[20px]">
         {/* Slider track */}
         <div
-          className="absolute left-0 top-0 h-2 bg-indigo-500 rounded-full"
+          className="absolute left-0 top-0 h-3 bg-[#FD6F00] rounded-full"
           style={{ width: `${value}%` }}
         ></div>
         {/* Slider thumb */}
         <div
-          className="absolute w-6 h-6 bg-white border-2 border-indigo-500 rounded-full shadow"
+          className="absolute w-[32px] h-[32px] bg-[#EDECEC] border-[3px] border-[#FD6F00] rounded-full shadow"
           style={{
             left: `${value}%`,
-            top: "-5px",
+            top: "-12px",
             transform: "translateX(-50%)",
           }} // Adjust top value here
         ></div>
