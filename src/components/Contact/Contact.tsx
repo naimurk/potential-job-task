@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1420px] mx-auto border min-w-[320px] xl:px-[50px] px-4 items-center pt-[100px] poppins">
+      <div className="max-w-[1420px] mx-auto  min-w-[320px] xl:px-[50px] px-4 items-center pt-[100px] poppins">
         {/* text */}
-        <div className="text-center text-black border border-emerald-400">
+        <div className="text-center text-black ">
           <h1 className="text-[65px] font-semibold">Lets Design Together</h1>
           <p className="xl:w-[932px] mx-auto font-normal text-[21px] mt-[15px] ">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
