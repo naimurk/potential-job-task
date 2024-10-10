@@ -106,7 +106,7 @@ const Projects = () => {
         </div>
 
         {/* Projects list */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-[44px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-[44px]">
           {filterProjects?.map((project) => (
             <div className="overflow-hidden " key={project.id}>
               <div className="h-[489px] relative bg-[#FFEBDB] rounded-[12px]">
