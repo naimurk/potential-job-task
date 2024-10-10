@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import Projects from "@/components/Projects/Projects";
 import Service from "@/components/Service/Service";
+import Testimonials from "@/components/Testimonials/Testimonials";
 import React from "react";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutMe></AboutMe>
       <Service></Service>
       <Projects></Projects>
+      <Testimonials></Testimonials>
       <Contact></Contact>
       <Footer></Footer>
     </div>
