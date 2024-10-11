@@ -22,7 +22,7 @@ const Banner = () => {
     // Cleanup listener on unmount
     return () => window.removeEventListener("resize", checkViewportSize);
   }, []);
-  console.log(viewportWidth);
+  // console.log(viewportWidth);
   return (
     <div className="bg-white poppins">
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-[50px] px-4 grid gap-8 md:gap-12 xl:gap-0 grid-cols-1 lg:grid-cols-2 items-center pt-[50px] md:pt-[70px] lg:pt-[100px]">
