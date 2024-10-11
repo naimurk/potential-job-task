@@ -20,7 +20,7 @@ const AboutMe = () => {
     return () => window.removeEventListener("resize", checkViewportSize);
   }, []);
   return (
-    <div className="bg-white">
+    <div id="about" className="bg-white">
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-0 px-4 grid gap-8 md:gap-12 xl:gap-0 grid-cols-1 lg:grid-cols-2 items-center pt-[70px]  lg:pt-[100px]">
         {/* image div */}
         <div className="relative flex justify-center lg:justify-start">

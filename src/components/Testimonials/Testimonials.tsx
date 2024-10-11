@@ -50,7 +50,7 @@ const Testimonials = () => {
   }, [testimonialsContent.length]);
 
   return (
-    <div className="w-full flex flex-col relative items-center pt-[100px] poppins">
+    <div id="testimonials" className="w-full flex flex-col relative items-center pt-[100px] poppins">
       <div className="w-full text-center px-4">
         <h1 className="text-[36px] md:text-[50px] lg:text-[65px] font-semibold">
           Lets Design Together

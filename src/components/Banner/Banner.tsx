@@ -24,7 +24,7 @@ const Banner = () => {
   }, []);
   // console.log(viewportWidth);
   return (
-    <div className="bg-white poppins">
+    <div id="home" className="bg-white poppins">
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-[50px] px-4 grid gap-8 md:gap-12 xl:gap-0 grid-cols-1 lg:grid-cols-2 items-center pt-[50px] md:pt-[70px] lg:pt-[100px]">
         <div className="">
           <p className="font-semibold text-[18px] md:text-[20px] lg:text-[24px] text-black">
@@ -49,9 +49,11 @@ const Banner = () => {
             tempus pharetra
           </p>
 
-          <button className="w-[120px] h-[40px] md:w-[160px] md:h-[48px] lg:w-[188px] lg:h-[52px] bg-[#FD6F00] text-white rounded-[5px] text-[16px] md:text-[18px] lg:text-[21px] font-normal mt-[22px]">
-            Download CV
-          </button>
+          <a href="#contact">
+            <button className="w-[120px] h-[40px] md:w-[160px] md:h-[48px] lg:w-[188px] lg:h-[52px] bg-[#FD6F00] text-white rounded-[5px] text-[16px] md:text-[18px] lg:text-[21px] font-normal mt-[22px]">
+              Hire Me
+            </button>
+          </a>
         </div>
 
         {/* image div */}
@@ -89,10 +91,18 @@ const Banner = () => {
             </div>
           )}
           <div className="xl:w-[508px]   flex justify-center xl:justify-end items-center gap-x-[25px] mt-[39px]  ">
-            <FaFacebook size={32.48}></FaFacebook>
-            <FaTwitter size={32.48}></FaTwitter>
-            <FaInstagram size={32.48}></FaInstagram>
-            <FaLinkedin size={32.48}></FaLinkedin>
+            <a href="https://www.facebook.com/naimurk781" target="_blank">
+              <FaFacebook size={32.48}></FaFacebook>
+            </a>
+            <a href="https://www.facebook.com/naimurk781" target="_blank">
+              <FaTwitter size={32.48}></FaTwitter>
+            </a>
+            <a href="https://www.facebook.com/naimurk781" target="_blank">
+              <FaInstagram size={32.48}></FaInstagram>
+            </a>
+            <a href="https://www.linkedin.com/in/naimurk/">
+              <FaLinkedin size={32.48}></FaLinkedin>
+            </a>
           </div>
         </div>
       </div>

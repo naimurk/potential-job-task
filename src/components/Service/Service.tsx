@@ -35,7 +35,7 @@ const Service = () => {
   ];
 
   return (
-    <div>
+    <div id="services" className="bg-white">
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-[50px] px-4 pt-[100px] poppins">
         {/* Title and Description */}
         <div className="text-center text-black">

@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="bg-white">
+    <div id="contact" className="bg-white">
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-[50px] px-4 items-center pt-[80px] md:pt-[100px] poppins">
         {/* text */}
         <div className="text-center text-black">

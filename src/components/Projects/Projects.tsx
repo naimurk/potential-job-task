@@ -83,7 +83,7 @@ const Projects = () => {
   }, [activeTab]);
 
   return (
-    <div>
+    <div className="bg-white" id="projects">
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-[50px]  px-4 pt-[100px] poppins">
         {/* text */}
         <div className="text-center text-black">
