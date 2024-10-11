@@ -5,7 +5,6 @@ import web3Img from "@/assests/testimonials/Ellipse 11.png";
 import Image from "next/image";
 
 const Testimonials = () => {
-  // Array of images
   const testimonialsContent = [
     {
       name: "Name 1",
@@ -52,8 +51,16 @@ const Testimonials = () => {
 
   return (
     <div className="w-full flex flex-col relative items-center pt-[100px] poppins">
+      <div className="w-full text-center">
+        <h1 className="text-[65px] font-semibold">Lets Design Together</h1>
+        <p className="xl:w-[932px] mx-auto font-normal text-[21px] mt-[15px] ">
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+          lectus netus in. Aliquet donec morbi convallis pretium
+        </p>
+      </div>
+
       {/* Image Slider */}
-      <div className="w-full overflow-hidden flex justify-center items-center relative max-w-[1520px] mx-auto">
+      <div className="w-full mt-[90px] overflow-hidden flex justify-center items-center relative max-w-[1520px] mx-auto">
         {/* Previous image */}
         <div
           className="absolute left-0 flex items-center opacity-20 transition-opacity duration-500"
@@ -65,7 +72,7 @@ const Testimonials = () => {
             width={235}
             height={235}
           />
-              <div>
+          <div>
             {/* Quote Styling */}
             <div className="flex items-start">
               <span className="font-bold text-[32px] text-[#FD6F00] ">“</span>
@@ -128,7 +135,7 @@ const Testimonials = () => {
             width={235}
             height={235}
           />
-            <div>
+          <div>
             {/* Quote Styling */}
             <div className="flex items-start">
               <span className="font-bold text-[32px] text-[#FD6F00] ">“</span>
@@ -152,12 +159,12 @@ const Testimonials = () => {
       </div>
 
       {/* Pagination */}
-      <div className="flex justify-center mt-4 gap-2">
+      <div className="flex justify-center mt-[85px] gap-2">
         {testimonialsContent.map((_, index) => (
           <span
             key={index}
-            className={`w-4 h-4 rounded-full ${
-              index === activeIndex ? "bg-blue-500" : "bg-gray-300"
+            className={`w-[57px] h-[16px] rounded-[8px] ${
+              index === activeIndex ? "bg-[#FD6F00]" : "bg-[#D9D9D9]"
             }`}
           ></span>
         ))}
