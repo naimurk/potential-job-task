@@ -1,7 +1,7 @@
 
 
 
-Check out the live version of the project at: [Live Demo](https://fluffy-donut-0be09b.netlify.app/)
+Check out the live version of the project at: [Live Demo](https://potential-job-task-orpin.vercel.app/)
 
 
 ## Project Setup
