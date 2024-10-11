@@ -13,10 +13,10 @@ const Home = () => {
     <div className="">
       <Navbar></Navbar>
       <Banner></Banner>
-      {/* <AboutMe></AboutMe>
+       <AboutMe></AboutMe>
       <Service></Service>
       <Projects></Projects>
-      <Testimonials></Testimonials>
+      {/*<Testimonials></Testimonials>
       <Contact></Contact>
       <Footer></Footer> */}
     </div>

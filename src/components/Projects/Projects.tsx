@@ -65,7 +65,13 @@ const Projects = () => {
   ];
 
   // Tabs
-  const tabs: string[] = ["All", "UI/UX", "Web Design", "App Design", "Graphics Design"];
+  const tabs: string[] = [
+    "All",
+    "UI/UX",
+    "Web Design",
+    "App Design",
+    "Graphics Design",
+  ];
   const [filterProjects, setFilterProjects] = useState<Project[]>([]);
 
   useEffect(() => {
@@ -81,19 +87,21 @@ const Projects = () => {
       <div className="max-w-[1420px] mx-auto min-w-[320px] xl:px-[50px]  px-4 pt-[100px] poppins">
         {/* text */}
         <div className="text-center text-black">
-          <h1 className="text-[65px] font-semibold">My Projects</h1>
-          <p className="xl:w-[932px] mx-auto font-normal text-[21px] mt-[15px] ">
+          <h1 className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-semibold">
+            My Projects
+          </h1>
+          <p className="xl:w-[932px] mx-auto font-normal text-[16px] sm:text-[18px] md:text-[20px] lg:text-[21px] mt-[15px] ">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in. Aliquet donec morbi convallis pretium
           </p>
         </div>
 
         {/* tab buttons */}
-        <div className="flex justify-center gap-x-[17px] my-[100px]">
+        <div className="flex flex-wrap justify-center gap-x-[10px] gap-y-[10px] my-[50px]">
           {tabs.map((tab) => (
             <button
               key={tab}
-              className={`w-fit px-[20px] py-[10px] rounded-[12px] text-[24px] font-normal border ${
+              className={`w-fit px-[10px] sm:px-[15px] md:px-[20px] py-[8px] sm:py-[10px] rounded-[8px] sm:rounded-[10px] md:rounded-[12px] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-normal border ${
                 activeTab === tab
                   ? "bg-[#FD6F00] border-[#545454] text-white"
                   : "bg-[#F8F8F8] border-[#545454] text-black "
@@ -118,7 +126,7 @@ const Projects = () => {
                   alt={project.title}
                 ></Image>
                 <Image
-                  className="absolute right-[27px]"
+                  className="absolute right-[27px] md:right-[20px] lg:right-[27px]"
                   width={274}
                   height={489}
                   src={project.img[1]}
