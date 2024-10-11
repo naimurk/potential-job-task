@@ -51,10 +51,22 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex justify-center items-center gap-x-4 md:gap-x-[25px]">
-          <FaFacebook size={28} />
+        <a href="https://www.facebook.com/naimurk781" target="_blank">
+              <FaFacebook size={28}></FaFacebook>
+            </a>
+            <a href="https://www.facebook.com/naimurk781" target="_blank">
+              <FaTwitter size={28}></FaTwitter>
+            </a>
+            <a href="https://www.facebook.com/naimurk781" target="_blank">
+              <FaInstagram size={28}></FaInstagram>
+            </a>
+            <a href="https://www.linkedin.com/in/naimurk/">
+              <FaLinkedin size={28}></FaLinkedin>
+            </a>
+          {/* <FaFacebook size={28} />
           <FaTwitter size={28} />
           <FaInstagram size={28} />
-          <FaLinkedin size={28} />
+          <FaLinkedin size={28} /> */}
         </div>
       </div>
 
