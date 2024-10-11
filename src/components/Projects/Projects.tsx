@@ -97,7 +97,7 @@ const Projects = () => {
         </div>
 
         {/* tab buttons */}
-        <div className="flex flex-wrap justify-center gap-x-[10px] gap-y-[10px] my-[50px]">
+        <div className="flex flex-wrap justify-center gap-x-[10px] gap-y-[10px] my-[106px]">
           {tabs.map((tab) => (
             <button
               key={tab}
